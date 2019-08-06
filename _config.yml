@@ -5,6 +5,8 @@ description:
 timezone: America/Los_Angeles
 google_analytics: UA-54984338-2
 
+baseurl: /quantecon-jekyll-theme/
+
 sass:
    sass_dir: _sass
    style: :compressed
