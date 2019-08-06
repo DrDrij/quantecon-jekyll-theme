@@ -6,7 +6,7 @@ layout: default
 
 <ul class="team-members">
 {% for team-member in site.team-members %}
-	<li><img alt="" src="/assets/team/{{ team-member.image }}" style="width: 100px; height: 100px;"><a href="{{ team-member.url }}">{{ team-member.name }}</a> {{ team-member.description }}</li>
+	<li><img alt="" src="{{ site.baseurl }}assets/team/{{ team-member.image }}" style="width: 100px; height: 100px;"><a href="{{ team-member.link }}">{{ team-member.name }}</a> {{ team-member.description }}</li>
 {% endfor %}
 </ul>
 

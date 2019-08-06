@@ -41,9 +41,9 @@ layout: default
 {% for project in site.projects %}
 
   <li>
-    <div class="thumb"><a href="{{ project.url | relative_url }}" onclick="ga('send', 'event', 'Click', 'CallToAction', 'QuantEcon.py')"><img src="{{ '/assets/' + project.image | relative_url }}" alt=" "></a></div>
+    <div class="thumb"><a href="{{ project.link | relative_url }}" onclick="ga('send', 'event', 'Click', 'CallToAction', 'QuantEcon.py')"><img src="{{ site.baseurl }}assets/{{project.image}}" alt=" "></a></div>
 
-    <h3><a href="{{ project.url | relative_url }}" onclick="ga('send', 'event', 'Click', 'CallToAction', '{{ project.name }}')">{{ project.name }}</a></h3>
+    <h3><a href="{{ project.link | relative_url }}" onclick="ga('send', 'event', 'Click', 'CallToAction', '{{ project.name }}')">{{ project.name }}</a></h3>
 
     <p class="desc">{{ project.description | markdownify }}</p>
 

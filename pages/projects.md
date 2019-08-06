@@ -12,7 +12,7 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 {% for project in site.projects %}
-  <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-  <p><img src="/assets/{{ project.image }}" style="width:75px;"></p>
+  <h2><a href="{{ project.link }}">{{ project.name }}</a></h2>
+  <p><img src="{{ site.baseurl }}assets/{{ project.image }}" style="width:75px;"></p>
   <p>{{ project.description | markdownify }}</p>
 {% endfor %}
