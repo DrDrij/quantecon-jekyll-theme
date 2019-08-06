@@ -1,11 +1,11 @@
-title: Really Simple # Title of site.
+title: QuantEcon
 url: 
 description: 
 
 timezone: America/Los_Angeles
 google_analytics: UA-54984338-2
 
-baseurl: /
+baseurl: /quantecon-jekyll-theme
 
 sass:
    sass_dir: _sass
