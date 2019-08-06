@@ -21,7 +21,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <link rel="stylesheet" href="/assets/main.css">
+        <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
 
    {% if jekyll.environment == 'production' and site.google_analytics %}
@@ -37,7 +37,7 @@
   {% endif %}
 
         <link rel="stylesheet" href="https://assets.quantecon.org/css/qe-menubar.css">
-        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon" />
         <link rel="canonical" href="https://quantecon.org/">
         <link href="https://fonts.googleapis.com/css?family=Exo:200,400|Roboto:400,700" rel="stylesheet">
 
@@ -78,11 +78,11 @@
                 
                 <div class="branding">
 
-                    <p class="site-logo"><a href="/" title="Home"><img src="/assets/img/qe-logo-large.png" alt="QuantEcon logo"></a></p>
+                    <p class="site-logo"><a href="{{ '/' | relative_url }}" title="Home"><img src="{{ '/assets/img/qe-logo-large.png' | relative_url }}" alt="QuantEcon logo"></a></p>
                     
                     <div class="site-name">
                     
-                        <p class="site-title"><a href="/" title="Home">Quant<span>Econ</span></a></p>
+                        <p class="site-title"><a href="{{ '/' | relative_url }}" title="Home">Quant<span>Econ</span></a></p>
 
 {% if page.layout == "home" %}
                         <p class="site-tagline">Open source code for economic modeling</p>
@@ -96,10 +96,10 @@
                     
                     <nav class="main">
                       <ul>
-                      <li><a href="/">Home</a></li>
+                      <li><a href="{{ '/' | relative_url }}">Home</a></li>
                        {% assign pages = site.pages | where: "menu_item", "true" %}
                        {% for node in pages %}
-                          <li class="{% if page.url == node.url %}active{% endif %}"><a href="{{ node.url }}">{{ node.title }}</a></li>
+                          <li class="{% if page.url == node.url %}active{% endif %}"><a href="{{ node.url | relative_url }}">{{ node.title }}</a></li>
                        {% endfor %}
                       </ul>
 
@@ -141,22 +141,22 @@
             <div class="footer-copy">
 
                 
-                <p><a href="https://sloan.org/"><img alt="" src="/assets/img/sloan-logo.png" style="float: left; width: 85px; height: 90px; margin-right: 15px;"></a></p>
+                <p><a href="https://sloan.org/"><img alt="" src="{{ '/assets/img/sloan-logo.png' | relative_url }}" style="float: left; width: 85px; height: 90px; margin-right: 15px;"></a></p>
 
 <p>A <a href="http://www.numfocus.org/">NumFocus</a> Fiscally Sponsored Project.<br>
 Hosted with <a href="https://aws.amazon.com/">Amazon Web Services</a>.</p>
 
-<p> <img alt="" src="/assets/img/numfocus-logo.png" style="height: 37px; width: 110px;"> </p>
+<p> <img alt="" src="{{ '/assets/img/numfocus-logo.png' | relative_url }}" style="height: 37px; width: 110px;"> </p>
 
 
             </div>
 
             <nav class="main">
                       <ul>
-                      <li><a href="/">Home</a></li>
+                      <li><a href="{{ '/' | relative_url }}">Home</a></li>
                        {% assign pages = site.pages | where: "menu_item", "true" %}
-                       {% for page in pages %}
-                          <li><a href="/">{{ page.title }}</a></li>
+                       {% for node in pages %}
+                          <li><a href="{{ node.url | relative_url }}">{{ node.title }}</a></li>
                        {% endfor %}
                       </ul>
             </nav>
@@ -164,10 +164,10 @@ Hosted with <a href="https://aws.amazon.com/">Amazon Web Services</a>.</p>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/assets/js/jquery-1.11.0.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="{{ '/assets/js/jquery-1.11.0.min.js' | relative_url }}"><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="/assets/js/plugins.js"></script>
-        <script src="/assets/js/main.js"></script>
+        <script src="{{ '/assets/js/plugins.js' | relative_url }}"></script>
+        <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
     </body>
 </html>
