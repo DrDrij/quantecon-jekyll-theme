@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+
+
+  {{ content }}
+
+  <div class="news">
+
+  <h2>Latest news</h2>
+
+  <ul>
+    {% assign post_limit = site.post_limit | default: 3 %}
+    {% for post in site.posts limit: post_limit %}
+
+<li>
+    {% if site.post_excerpt.active %}
+       {% include post_excerpt.html %}
+    {% else %}
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+    <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
+    <div class="summary">{{ post.content }}</div>
+</li>
+      {% endif %}
+    {% endfor %}
+
+  </ul>
+
+<p class="more"><a href="/news">Read more</a></p>
+
+</div>
+
+<hr>
+
+<div class="projects">
+
+  <h2>Projects</h2>
+
+<ul>
+{% for project in site.projects %}
+
+  <li>
+    <div class="thumb"><a href="{{ project.url }}" onclick="ga('send', 'event', 'Click', 'CallToAction', 'QuantEcon.py')"><img src="/assets/{{ project.image }}" alt=" "></a></div>
+
+    <h3><a href="/quantecon-py" onclick="ga('send', 'event', 'Click', 'CallToAction', '{{ project.name }}')">{{ project.name }}</a></h3>
+
+    <p class="desc">{{ project.description | markdownify }}</p>
+
+  </li>
+{% endfor %}
+</ul>
+
+
+</div>
+

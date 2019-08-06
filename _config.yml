@@ -1,0 +1,22 @@
+title: Really Simple # Title of site.
+url: 
+description: 
+
+timezone: America/Los_Angeles
+google_analytics: UA-54984338-2
+
+sass:
+   sass_dir: _sass
+   style: :compressed
+
+repository: 
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle
+
+collections:
+  projects:
+  team-members:
+    people: true
