@@ -1,6 +1,7 @@
 ---
-name: Jane Doe
-image: homer-simpson.png
-link: http://www.tomsargent.com/
-description: is a Professor of Economics at New York University and recipient of the Nobel Memorial Prize in Economics in 2011 for work in macroeconomics.
+name: John Stachurski
+image: john.jpg
+link: http://johnstachurski.net/
+role: "Founding Members and Co-Chairs"
 ---
+John Stachurski is a Professor of Economics at Australian National University with interests in Markov process theory, asset pricing, dynamic programming and numerical methods.
