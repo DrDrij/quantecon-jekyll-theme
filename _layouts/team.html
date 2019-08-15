@@ -29,7 +29,7 @@ layout: default
 {% assign team-members = site.team-members | where: 'role', 'Lead Developers' %}
 
 <ul class="team-members">
-{% for team-member in team-members %}
+{% for team-member in team-members reversed %}
 	<li><img alt="" src="{{ site.baseurl }}assets/team/{{ team-member.image }}" style="width: 100px; height: 100px;"><a href="{{ team-member.link }}">{{ team-member.name }}</a> {{ team-member.content }}</li>
 {% endfor %}
 </ul>

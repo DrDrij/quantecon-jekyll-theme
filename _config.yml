@@ -23,3 +23,10 @@ collections:
   projects:
   team-members:
     people: true
+
+defaults:
+  -
+    scope:
+      type: "projects"
+    values:
+      order: 99

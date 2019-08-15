@@ -9,10 +9,11 @@ layout: default
   <h2>Projects</h2>
 
   <ul>
-{% for project in site.projects %}
+{% assign ordered_projects = site.projects | sort: "order" %}
+{% for project in ordered_projects %}
     <li>
-      <div class="thumb"><a href="{{ project.link | relative_url }}" onclick="ga('send', 'event', 'Click', 'CallToAction', 'QuantEcon.py')"><img src="{{ site.baseurl }}assets/{{project.image}}" alt=" "></a></div>
-      <h3><a href="{{ project.link | relative_url }}" onclick="ga('send', 'event', 'Click', 'CallToAction', '{{ project.name }}')">{{ project.name }}</a></h3>
+      <div class="thumb"><a href="{{ project.link | relative_url }}"><img src="{{ site.baseurl }}assets/projects/{{project.image}}" alt=" " style="width:75px;"></a></div>
+      <h3><a href="{{ project.link | relative_url }}">{{ project.name }}</a></h3>
       <p class="desc">{{ project.description | markdownify }}</p>
     </li>
 {% endfor %}

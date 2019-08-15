@@ -1,6 +1,6 @@
 ---
 name: Susan Athey
-image: portrait-placeholder.png
+image: susan.jpg
 link: https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey
 role: "Committee Members"
 ---

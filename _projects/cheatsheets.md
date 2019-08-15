@@ -1,6 +1,6 @@
 ---
 name: Cheatsheets
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+description: Scientific programming cheatsheets for Python and Julia
 link: https://cheatsheets.quantecon.org/
-image: project-lectures.png
+image: project-cheatsheets.png
 ---

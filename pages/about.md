@@ -4,9 +4,18 @@ permalink: about
 menu_item: true
 ---
 # About
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+QuantEcon is a nonprofit organization dedicated to improving economic modeling by enhancing computational tools for economists.  Our activities include
+
+*   developing and facilitating the development of open source software for economic modeling, and
+*   building open, collaborative platforms for sharing, discussing and documenting open source software
+
+Development is centered on open source scientific computing environments such as Python, R and Julia. 
+
+QuantEcon is a [NumFocus](http://www.numfocus.org/) Fiscally Sponsored Project, currently funded primarily by the Alfred P. Sloan Foundation.
+
+To learn more about our activities visit the [projects page](projects.md).
+
+### Contact
+
+Send feedback to [contact@quantecon.org](mailto:contact@quantecon.org)
