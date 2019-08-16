@@ -1,6 +1,6 @@
 ---
 title: "Contribute to QuantEcon.py"
-permalink: julia-developers
+permalink: python-developers
 menu_item: false
 ---
 # Contribute to QuantEcon.py

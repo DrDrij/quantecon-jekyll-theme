@@ -1,13 +1,17 @@
 ---
-title: Store
+title: Merchandise Store
 permalink: store
 menu_item: false
 ---
-# Store
+# Merchandise Store
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Get your QuantEcon merch at our new store! The QuantEcon merchandise store is managed by [NumFOCUS](https://numfocus.org/) and proceeds go towards supporting the QuantEcon project.
+
+<ul class="store-items">
+	<li>
+        <img alt="" src="/assets/shirt1.png"><a href="https://shop.spreadshirt.com/numfocus/quantecon+official+logo?q=I1018703424">Shop light items</a>
+    </li>
+    <li>
+        <img alt="" src="/assets/shirt2.png"><a href="https://shop.spreadshirt.com/numfocus/quantecon+official+logo+2?q=I1018776229">Shop dark items</a>
+    </li>
+</ul>
